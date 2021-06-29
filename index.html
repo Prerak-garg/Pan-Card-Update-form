@@ -41,9 +41,9 @@
                        <p style="display:inline"><span>*</span>Whether citizen of India</p>
                        <div style="display: inline;">
                         <label for="yes" style="padding-left:60px ;">Yes</label>
-                        <input type="radio" id="yes">
+                        <input type="radio" id="yes" name="citicheck">
                         <label for="no" style="padding-left: 20px;">No</label>
-                        <input type="radio" id="no">
+                        <input type="radio" id="no" name="citicheck">
                     </div>
                    </td>
                </tr>
@@ -72,11 +72,11 @@
                     <p style="display:inline">Title</p>
                     <div style="display: inline;">
                      <label for="one" style="padding-left:60px ;">Shri./Mr.</label>
-                     <input type="radio" id="one">
-                     <label for="one" style="padding-left: 20px;">Smt./Mrs.</label>
-                     <input type="radio" id="one">
-                     <label for="one" style="padding-left: 20px;">Kumari/Ms.</label>
-                     <input type="radio" id="one">
+                     <input type="radio" id="one" name="shr">
+                     <label for="two" style="padding-left: 20px;">Smt./Mrs.</label>
+                     <input type="radio" id="two" name="shr">
+                     <label for="three" style="padding-left: 20px;">Kumari/Ms.</label>
+                     <input type="radio" id="three" name="shr">
                  </div>
                 </td> 
             </tr>
@@ -119,9 +119,9 @@
                 <td>
                     <div style="display: inline;">
                         <label for="yes" style="padding-left:60px ;">Yes</label>
-                        <input type="radio" id="yes">
+                        <input type="radio" id="yes" name="mom">
                         <label for="no" style="padding-left: 20px;">No</label>
-                        <input type="radio" id="no">
+                        <input type="radio" id="no" name="mom">
                     </div>
                 </td>
             </tr>
@@ -168,10 +168,10 @@
                     <p style="color: blue; display: inline;">(In case no option is provided then PAN card will be issued with father's name)</p>
                 </td>
                 <td style="padding-right: 50px;">
-                    <label for="yes" style="padding-left:60px ;">Father</label>
-                        <input type="radio" id="">
-                        <label for="" style="padding-left: 20px;">Mother</label>
-                        <input type="radio" id="">
+                    <label for="father" style="padding-left:60px ;">Father</label>
+                        <input type="radio" id="father" name="papa" >
+                        <label for="mother" style="padding-left: 20px;">Mother</label>
+                        <input type="radio" id="mother" name="mom">
                 </td>
             </tr>
              <tr>
@@ -190,12 +190,12 @@
                  <td><p><span>*</span>6.Gender</p></td>
                  <td>
                     <div style="display: inline;">
-                        <label for="one" style="padding-left:60px ;">Male</label>
-                        <input type="radio" id="one">
-                        <label for="one" style="padding-left: 20px;">Female</label>
-                        <input type="radio" id="one">
-                        <label for="one" style="padding-left: 20px;">Trans Gender</label>
-                        <input type="radio" id="one">
+                        <label for="male" style="padding-left:60px ;">Male</label>
+                        <input type="radio" id="male" name="male">
+                        <label for="two" style="padding-left: 20px;">Female</label>
+                        <input type="radio" id="two" name="male">
+                        <label for="three" style="padding-left: 20px;">Trans Gender</label>
+                        <input type="radio" id="three" name="male">
                     </div>
 
                  </td>
@@ -294,7 +294,46 @@
                     
                 </td>
                 <td>
-                    <input type="text">
+                    
+                    <select name="state" id="state" class="form-control">
+                        <option value="select">--select--</option>
+                        <option value="andhra pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chattisgarh">Chattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshdweep">Lakshdweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujurat">Gujurat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya pradesh">Madhya Pradesh</option>
+                        <option value="Maharastra">Maharastra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttrakhand">Uttrakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
                 </td>
 
             </tr>
@@ -367,11 +406,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="radio" id="">
+                                <input type="radio" id="one" name="mbnum">
                                 <label for="one" style="padding-left: 20px;">Mobile No.</label>
                             </td>
                             <td>
-                                <input type="radio" id="">
+                                <input type="radio" id="two" name="telnum">
                                 <label for="one" style="padding-left: 20px;">Telephone No.</label>
                             </td>
                         </tr>
@@ -503,65 +542,25 @@
             <tr>
                 <td></td>
                 <td colspan="2">
-                    <table class="tab1">
-                        <tr class="tr1">
-                            <td class="td1" colspan="2">
-                                <p>I/We have enclosed</p>
-                            </td>
-                        </tr>
-                        <tr class="tr1">
-                            <td class="td1" style="padding-right: 1300px;">
-                                <form action="/action_page.php">
-                        
-                                    <select id="" name="" style="padding-right: 900%;">
-                                      <option value="r">--Please Select--</option>
-                                      <option value="r1">Random 1</option>
-                                      <option value="r2">Random 2</option>
-                                      <option value="r3">Random 3</option>
-                                    </select>
-                                </form>
-                                
-                            </td>
-                            <td class="td1" >
-                                <p>as proof of identity</p>
-                            </td>
-                        </tr>
-                        <tr class="tr1">
-                            <td class="td1" style="padding-right: 1300px;">
-                                <form action="/action_page.php">
-                        
-                                    <select id="" name="" style="padding-right: 900%;">
-                                      <option value="r">--Please Select--</option>
-                                      <option value="r1">Random 1</option>
-                                      <option value="r2">Random 2</option>
-                                      <option value="r3">Random 3</option>
-                                    </select>
-                                </form>
-                                
-                            </td>
-                            <td class="td1" >
-                                <p>as proof of address</p>
-                            </td>
-                        </tr>
-                        <tr class="tr1">
-                            <td class="td1" style="padding-right: 1300px;">
-                                <form action="/action_page.php">
-                        
-                                    <select id="" name="" style="padding-right: 900%;">
-                                      <option value="r">--Please Select--</option>
-                                      <option value="r1">Random 1</option>
-                                      <option value="r2">Random 2</option>
-                                      <option value="r3">Random 3</option>
-                                    </select>
-                                </form>
-                                
-                            </td>
-                            <td class="td1" >
-                                <p>as proof of date of birth</p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
+                    <label for="i">I/We have enclosed</label><br>
+                    <select name="pro" id="profif">
+                        <option value="select">--select--</option>
+                    </select>
+                    "as proof"<br>
+                    "of identity,"<br>
+                    <select name="pro" id="profif">
+                        <option value="select">--select--</option>
+                    </select>
+                    "as proof of address"<br>
+                    <select name="pro" id="profif">
+                        <option value="select">--select--</option>
+                    </select>
+                    "as proof date of birth"<br>
+                    <select name="pro" id="profif">
+                        <option value="select">--select--</option>
+                    </select>
+                    "as proof of PAN alloted"
+                </td> 
                     
             </tr>
             <tr>
